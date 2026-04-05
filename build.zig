@@ -57,6 +57,8 @@ pub fn build(b: *std.Build) void {
     lib.root_module.addConfigHeader(b.addConfigHeader(.{ .style = .blank, .include_path = "x264_config.h" }, x264_config));
     lib.root_module.addConfigHeader(b.addConfigHeader(.{ .style = .blank, .include_path = "config.h" }, config_h));
     lib.root_module.addIncludePath(b.path("."));
+    lib.root_module.addIncludePath(b.path("common"));
+    lib.root_module.addIncludePath(b.path("encoder"));
 
     const flags = &.{
         "-DHAVE_CONFIG_H",
