@@ -1,0 +1,19 @@
+.{
+    .name = .x264,
+    .version = "164.0.0",
+    .fingerprint = 0x8803518a62de67,
+    .minimum_zig_version = "0.16.0",
+
+    .dependencies = .{
+        .nasm = .{
+            .url = "https://github.com/allyourcodebase/nasm/archive/4eabafcfca4f4dc5a0a5cd60e9233640b0c192f8.tar.gz",
+            .hash = "nasm-2.16.1-5-J30Ed9pnXADeEiehXaWUd4iLEMPwLrIv42q9X7NUFs8O",
+        },
+    },
+    .paths = .{
+        "AUTHORS",
+        "COPYING",
+        "x264.h",
+        "build.zig",
+    },
+}
