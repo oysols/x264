@@ -15,5 +15,6 @@
         "COPYING",
         "x264.h",
         "build.zig",
+        "build.zig.zon",
     },
 }
